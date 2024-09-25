@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #292F36;
+  --background: #010101;
   --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #010101;
     --foreground: #ededed;
   }
 }
@@ -23,5 +23,47 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .about-ctn {
+    background-image: 
+      linear-gradient(to bottom, transparent 40%, var(--background) 100%),
+      url("../../public/about-bg.png");
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    /* height: 50vh; */
+    position: relative;
+  }
+
+  .skill-bg {
+    background-image: 
+      linear-gradient(to top, transparent 40%, var(--background) 100%),
+      url("../../public/newest-bg.png");
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    min-height: 100vh;
+  }
+
+
+  .about-me {
+    background-image: url("../../public/new-laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60vw;
+    height: 70vh;
+  }
+
+  .works-bg {
+    background-image: url("../../public/code-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #282d33;
+    width: 100vw;
+    height: auto;
   }
 }

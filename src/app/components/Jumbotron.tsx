@@ -1,20 +1,20 @@
 import React from 'react';
 import { MailOutlined, Code, GridOffSharp, PersonOutline, PersonalVideo, LocationOnOutlined } from '@mui/icons-material';
-import { Grid2 } from '@mui/material';
+
 
 export default function Jumbotron() {
   return (
-    <div className='flex items-top justify-start gap-20 pt-8'>
-        <div className='menu border border-[#898C90] w-20 h-auto max-h-[40vh] flex flex-col items-center justify-between gap-2 py-6 px-6 rounded-full'>
+    <div className='min-h-screen flex items-top justify-start gap-16 pt-2 px-20'>
+        {/* <div className='menu border border-[#898C90] w-20 h-auto max-h-[40vh] flex flex-col items-center justify-between gap-2 py-6 px-6 rounded-full'>
             <p className='cursor-pointer'><img src="/grid.svg" alt="" /></p>
             <p className='cursor-pointer'><PersonOutline /></p>
             <p className='cursor-pointer'><Code /></p>
             <p className='cursor-pointer'><PersonalVideo /></p>
             <p className='cursor-pointer'><MailOutlined /></p>
-        </div>
+        </div> */}
         <div className=''>
             <h2 className='text-center text-[66px] font-medium text-[#9BF9F3] mb-8'>Developer</h2>
-            <div className='flex items-start justify-start gap-24'>
+            <div className='flex items-start justify-start gap-14'>
                 <div className="relative">
                     <div className="absolute top-0 left-0 w-full h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
                     <div className="leaf-shaped py-8 px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10">
@@ -60,13 +60,12 @@ export default function Jumbotron() {
                             <p className='text-sm text-[#6AECD9]'>&lt;h1&gt;</p>
                             <p className='text-[44px] pl-4 leading-[50px] font-medium'>Hey</p>
                             <p className='text-[44px] pl-4 leading-[50px] font-medium'>I'm <span className='text-[#6AECD9]'>Roheemah</span>,</p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium inline mr-4 no-wrap'>Frontend and Blockchain </p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium inline mr-4 pl-4'>Developer</p>
-                            <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span>
+                            <p className='text-[44px] pl-4 leading-[50px] font-medium inline mr-4 text-nowrap'>Frontend & Blockchain </p>
+                            <p className='text-[44px] pl-4 leading-[50px] font-medium mr-4 pl-4'>Developer <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
                         </div>
                         <div className='mt-8'>
                             <p className='text-sm text-[#6AECD9]'>&lt;p&gt;</p>
-                            <p className='pl-4 text-md font-bold text-[#9B9EA1]'>I build user-friendly and visually appealing web2/web3 applications. I also design, implement and maintain blockchain based applications. Hates mediocrity.</p>
+                            <p className='pl-4 text-md font-bold text-[#9B9EA1]'>I build user-friendly and visually appealing web applications. I also design, implement and maintain blockchain based applications. I hate mediocrity.</p>
                             <p className='text-sm text-[#6AECD9]'>&lt;/p&gt;</p>
                         </div>
                         <div className='flex items-center justify-start gap-4 mt-6'>

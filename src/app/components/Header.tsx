@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className='flex items-center justify-between py-8 border-b-[2px] border-[#31363D]'>
+    <div className='px-20 flex items-center justify-between py-8 border-b-[2px] border-[#31363D]'>
         <Link href="/">
             <span className='text-[20px] text-[#6AECD9] font-bold'>&lt;A.R.A /&gt;</span>
             {/* <span className='text-[20px]'> AbolareRoheemah</span> */}
