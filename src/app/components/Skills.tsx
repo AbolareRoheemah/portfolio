@@ -10,7 +10,7 @@ export default function Skills() {
         </div>
         <div className='flex flex-col items-center justify-start gap-2 text-center'>
             <div className="relative inline-block">
-              <p className='text-[36px] font-medium text-[#6df2db]'>Skills</p>
+              <p className='text-[46px] font-medium text-[#6df2db]'>Skills</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6df2db] rounded-full">
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
@@ -18,12 +18,12 @@ export default function Skills() {
             </div>
             <p className='text-[16px] text-[#a9acae]'>Here are some of the skills I have acquired over the years.</p>
             <div className='flex items-center justify-center gap-20 mt-10 mb-14'>
-                <div className='flex flex-col items-center justify-center gap-2 bg-[#9BF9F3] border-l-4 border-l-[#1f74bb] rounded-lg p-4 w-[300px]'>
+                <div className='flex flex-col items-center justify-center gap-2 bg-[#6bf6fb] border-l-4 border-l-[#fff] rounded-lg p-4 w-[300px]'>
                     <p className='cursor-pointer'><PersonalVideo className='text-[#000]' /></p>
                     <h3 className='text-[#000]'>Frontend Development</h3>
                     <p className='text-[#6DA8A2]'>JavaScript, TypeScript, React, Next, Vue, Nuxt, Tailwind, Git</p>
                 </div>
-                <div className='flex flex-col items-center justify-center gap-2 bg-[#9BF9F3] border-l-4 border-l-[#1f74bb] rounded-lg p-4 w-[300px]'>
+                <div className='flex flex-col items-center justify-center gap-2 bg-[#6bf6fb] border-l-4 border-l-[#fff] rounded-lg p-4 w-[300px]'>
                     <p className='cursor-pointer'><PersonalVideo className='text-[#000]' /></p>
                     <h3 className='text-[#000]'>Blockchain Development</h3>
                     <p className='text-[#6DA8A2]'>Solidity, Web3, Ethereum, ethers.js, Solidity</p>

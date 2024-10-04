@@ -51,9 +51,10 @@ body {
 
 
   .about-me {
-    background-image: url("../../public/new-laptop.jpg");
+    background-image: url("../../public/me2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     width: 60vw;
     height: 70vh;
   }

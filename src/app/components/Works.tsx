@@ -15,7 +15,7 @@ export default function Works() {
         </div>
         <div className='flex flex-col items-center justify-start gap-2 text-center relative z-10'>
             <div className="relative inline-block">
-              <p className='text-[36px] font-medium text-[#6df2db]'>Works</p>
+              <p className='text-[46px] font-medium text-[#6df2db]'>Works</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6df2db] rounded-full">
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>

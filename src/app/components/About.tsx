@@ -11,7 +11,7 @@ export default function About() {
             <div className="w-px h-10 border-l-2 border-dashed border-white-400 mt-2"></div>
             <div className='w-[0.5vw] h-[0.5vw] mt-2 rounded-full bg-white'></div>
         </div>
-        <div className='flex items-center justify-between gap-20'>
+        <div className='flex items-end justify-between gap-20'>
             <div>
                 <div className=' rounded-tl-[50px] rounded-br-[50px] border-2 border-[#6bf6fb] w-[max-content] py-2 px-8 bg-[#0D1117]'>
                     <h3 className='text-[40px]'>About Me</h3>
