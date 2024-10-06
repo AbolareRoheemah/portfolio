@@ -1,10 +1,11 @@
+'use client'
 import React from 'react';
 import { MailOutlined, Code, GridOffSharp, PersonOutline, PersonalVideo, LocationOnOutlined } from '@mui/icons-material';
-
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Jumbotron() {
   return (
-    <div className='min-h-screen flex items-top justify-start gap-16 pt-2 px-20'>
+    <div className='min-h-screen flex flex-col md:flex-row items-top justify-start gap-16 pt-2 px-4 md:px-20'>
         {/* <div className='menu border border-[#898C90] w-20 h-auto max-h-[40vh] flex flex-col items-center justify-between gap-2 py-6 px-6 rounded-full'>
             <p className='cursor-pointer'><img src="/grid.svg" alt="" /></p>
             <p className='cursor-pointer'><PersonOutline /></p>
@@ -12,12 +13,12 @@ export default function Jumbotron() {
             <p className='cursor-pointer'><PersonalVideo /></p>
             <p className='cursor-pointer'><MailOutlined /></p>
         </div> */}
-        <div className=''>
-            <h2 className='text-center text-[66px] font-medium text-[#9BF9F3] mb-8'>Developer</h2>
-            <div className='flex items-start justify-start gap-14'>
+        <div className='flex-1'>
+            <h2 className='text-center text-[36px] md:text-[66px] font-medium text-[#9BF9F3] mb-8'>Developer</h2>
+            <div className='flex flex-col md:flex-row items-start justify-start gap-14'>
                 <div className="relative">
                     <div className="absolute top-0 left-0 w-full h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
-                    <div className="leaf-shaped py-8 px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10">
+                    <div className="leaf-shaped py-8 px-6 md:px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10">
                         <div className='flex flex-col items-center justify-start'>
                             <div className="w-24 h-24 rounded-full bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6]" style={{backgroundImage: "url('/profile-image.jpg')"}}>
                             </div>
@@ -54,14 +55,27 @@ export default function Jumbotron() {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-start justify-start gap-10 pt-10'>
+                <div className='flex flex-col md:flex-row md:items-start md:justify-start gap-10 pt-10'>
                     <div className=''>
                         <div>
                             <p className='text-sm text-[#6AECD9]'>&lt;h1&gt;</p>
                             <p className='text-[44px] pl-4 leading-[50px] font-medium'>Hey</p>
                             <p className='text-[44px] pl-4 leading-[50px] font-medium'>I'm <span className='text-[#6AECD9]'>Roheemah</span>,</p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium inline mr-4 text-nowrap'>Frontend & Blockchain </p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium mr-4 pl-4'>Developer <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
+                            <TypeAnimation
+                                sequence={[
+                                    'Frontend Developer',
+                                    1000,
+                                    'Blockchain Developer',
+                                    1000,
+                                    'Technical Writer',
+                                    1000
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{ fontSize: '44px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
+                                repeat={Infinity}
+                            />
+                            <p> <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
                         </div>
                         <div className='mt-8'>
                             <p className='text-sm text-[#6AECD9]'>&lt;p&gt;</p>
@@ -71,19 +85,18 @@ export default function Jumbotron() {
                         <div className='flex items-center justify-start gap-4 mt-6'>
                             <p className='text-[34px] text-[#6AECD9]'>Let's Talk</p>
                             <p className='bg-[#464647] w-8 h-8 flex items-center justify-center p-4 rounded-full text-[#6AECD9] cursor-pointer'><MailOutlined /></p>
-                            {/* <p><Code /></p> */}
                         </div>
                     </div>
-                    <div className='py-10 px-8 bg-[#1A1E23] rounded-full'>
-                        <div className='flex items-center justify-center gap-4 mt-8'>
+                    <div className='py-10 px-8 bg-[#1A1E23] rounded-lg md:rounded-full'>
+                        <div className='flex items-center justify-start md:items-center md:justify-center gap-4 mt-8'>
                             <p className='text-[#6AECD9] text-[50px] font-medium'>4</p>
                             <p className=' text-md font-bold text-[#9B9EA1]'>Programming Languages</p>
                         </div>
-                        <div className='flex items-center justify-center gap-4 mt-8'>
+                        <div className='flex items-center justify-start md:items-center md:justify-center gap-4 mt-8'>
                             <p className='text-[#6AECD9] text-[50px] font-medium'>6</p>
                             <p className=' text-md font-bold text-[#9B9EA1]'>Development Tools</p>
                         </div>
-                        <div className='flex items-center justify-center gap-4 mt-8'>
+                        <div className='flex items-center justify-start md:items-center md:justify-center gap-4 mt-8'>
                             <p className='text-[#6AECD9] text-[50px] font-medium'>3</p>
                             <p className=' text-md font-bold text-[#9B9EA1]'>Years of Experience</p>
                         </div>

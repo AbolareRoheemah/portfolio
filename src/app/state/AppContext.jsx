@@ -1,13 +1,14 @@
 'use client'
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 
 const AppContext = React.createContext();
 
 export const AppProvider = ({children}) => {
   const topic = 'blog topic';
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <AppContext.Provider value={{topic}}>
+    <AppContext.Provider value={{topic,isMenuOpen, setIsMenuOpen}}>
       {children}
     </AppContext.Provider>
   )
