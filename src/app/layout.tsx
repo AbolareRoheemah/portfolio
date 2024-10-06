@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <AppProvider>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[100vw] overflow-x-hidden`}
       >
         <div>
           <Header />

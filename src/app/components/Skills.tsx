@@ -6,17 +6,17 @@ export default function Skills() {
   return (
     <div className='skill-bg flex flex-col items-center justify-start gap-2 pt-2 px-4 md:px-20 pb-20 h-screen'>
         <div className=''>
-            <h1 className='text-center text-[40px] md:text-[98px] font-medium text-[#6df2db]'>&lt;/&gt;</h1>
+            <h1 className='text-center text-[60px] md:text-[98px] font-medium text-[#6df2db]'>&lt;/&gt;</h1>
         </div>
         <div className='flex flex-col items-center justify-start gap-2 text-center'>
             <div className="relative inline-block">
-              <p className='text-[24px] md:text-[46px] font-medium text-[#6df2db]'>Skills</p>
+              <p className='text-[34px] md:text-[46px] font-medium text-[#6df2db]'>Skills</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6df2db] rounded-full">
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
               </div>
             </div>
-            <p className='text-[14px] md:text-[16px] text-[#a9acae]'>Here are some of the skills I have acquired over the years.</p>
+            <p className='text-[16px] text-[#a9acae]'>Here are some of the skills I have acquired over the years.</p>
             <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-20 mt-10 mb-14'>
                 <div className='flex flex-col items-center justify-center gap-2 bg-[#6df2db] border-l-4 border-l-[#00DC82] rounded-lg p-4 w-[300px]'>
                     <p className='cursor-pointer'><PersonalVideo className='text-[#000]' /></p>
