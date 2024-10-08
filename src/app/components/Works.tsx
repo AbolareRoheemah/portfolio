@@ -1,8 +1,11 @@
+'use client'
 import React from 'react'
 import { PersonalVideo, LocationOnOutlined, WorkOutlineOutlined } from '@mui/icons-material';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Works() {
+    const router = useRouter()
   return (
     <div className='works-bg flex flex-col items-center justify-start gap-2 pt-2 px-4 md:px-20 pb-20 h-screen relative'>
         <div className='absolute inset-0 bg-[#0a0a0a] opacity-80'></div>
@@ -15,7 +18,7 @@ export default function Works() {
         </div>
         <div className='flex flex-col items-center justify-center gap-2 text-center relative z-10'>
             <div className="relative inline-block">
-              <p className='text-[34px] md:text-[46px] font-medium text-[#6df2db]'>Works</p>
+              <p className='text-[34px] md:text-[46px] font-medium text-[#6df2db]'>Projects</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6df2db] rounded-full">
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
@@ -87,10 +90,10 @@ export default function Works() {
                 </div>
                 </div>
             </div>
-        <div className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-4 cursor-pointer'>
+        <button onClick={() => {router.push("/projects")}} className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-4 cursor-pointer'>
             <p>View More</p>
             <img src="/view.svg" alt="" width={24} height={24} />
-        </div>
+        </button>
         </div>
 
     </div>
