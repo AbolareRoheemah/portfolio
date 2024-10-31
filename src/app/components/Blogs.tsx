@@ -37,10 +37,10 @@ export default function Blogs() {
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14 cursor-pointer'>
+            <button className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14'>
                 <p>View More</p>
                 <img src="/view.svg" alt="" width={24} height={24} />
-            </div>
+            </button>
         </div>
 
     </div>
