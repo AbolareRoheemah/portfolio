@@ -1,9 +1,12 @@
+"use client"
 import React from 'react'
-import { PersonalVideo, LocationOnOutlined, WorkOutlineOutlined } from '@mui/icons-material';
-import Link from 'next/link';
-import {useAppContext} from "../state/AppContext"
+import { useRouter } from 'next/navigation';
 export default function Blogs() {
-    const topic = useAppContext;
+    const router = useRouter();
+
+    const handleRoute = () => {
+        router.push("/blogs");
+    }
 
   return (
     <div className='flex flex-col items-center justify-start gap-2 pt-2 md:px-20 px-8 pb-20 min-h-screen relative'>
@@ -37,7 +40,7 @@ export default function Blogs() {
                     </div>
                 </div>
             </div>
-            <button className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14'>
+            <button className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14' onClick={handleRoute}>
                 <p>View More</p>
                 <img src="/view.svg" alt="" width={24} height={24} />
             </button>
