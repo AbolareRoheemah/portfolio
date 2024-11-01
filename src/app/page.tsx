@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Jumbotron from "./components/Jumbotron";
 import About from "./components/About";
 import Skills from "./components/Skills";

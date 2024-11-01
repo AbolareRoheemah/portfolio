@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { MailOutlined, Code, GridOffSharp, PersonOutline, PersonalVideo, LocationOnOutlined } from '@mui/icons-material';
+import { MailOutlined, LocationOnOutlined } from '@mui/icons-material';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Jumbotron() {
@@ -60,7 +60,7 @@ export default function Jumbotron() {
                         <div>
                             <p className='text-sm text-[#6AECD9]'>&lt;h1&gt;</p>
                             <p className='text-[44px] pl-4 leading-[50px] font-medium'>Hey</p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium'>I'm <span className='text-[#6AECD9]'>Roheemah</span>,</p>
+                            <p className='text-[44px] pl-4 leading-[50px] font-medium'>I&apos;m <span className='text-[#6AECD9]'>Roheemah</span>,</p>
                             <TypeAnimation
                                 sequence={[
                                     'Frontend Developer',
@@ -83,7 +83,7 @@ export default function Jumbotron() {
                             <p className='text-sm text-[#6AECD9]'>&lt;/p&gt;</p>
                         </div>
                         <div className='flex items-center justify-start gap-4 mt-6'>
-                            <p className='text-[34px] text-[#6AECD9]'>Let's Talk</p>
+                            <p className='text-[34px] text-[#6AECD9]'>Let&apos;s Talk</p>
                             <p className='bg-[#464647] w-8 h-8 flex items-center justify-center p-4 rounded-full text-[#6AECD9] cursor-pointer'><MailOutlined /></p>
                         </div>
                     </div>

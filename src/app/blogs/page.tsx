@@ -1,9 +1,6 @@
 import React from 'react'
-import { PersonalVideo, LocationOnOutlined, WorkOutlineOutlined } from '@mui/icons-material';
 import Link from 'next/link';
-import {useAppContext} from "../state/AppContext"
 export default function Blogs() {
-    const topic = useAppContext;
 
   return (
     <div className='flex flex-col items-center justify-start gap-2 pt-2 md:px-20 px-8 pb-20 min-h-screen relative'>

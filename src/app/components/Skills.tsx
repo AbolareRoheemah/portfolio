@@ -1,6 +1,5 @@
 import React from 'react'
 import { PersonalVideo } from '@mui/icons-material';
-import { Grid2 } from '@mui/material';
 
 export default function Skills() {
   return (

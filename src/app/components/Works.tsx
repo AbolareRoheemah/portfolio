@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { PersonalVideo, LocationOnOutlined, WorkOutlineOutlined } from '@mui/icons-material';
+import { WorkOutlineOutlined } from '@mui/icons-material';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 

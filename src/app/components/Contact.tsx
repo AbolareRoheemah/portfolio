@@ -1,11 +1,7 @@
 'use client'
 import React, { useState, ChangeEvent } from 'react';
-import { PersonalVideo, LocationOnOutlined, WorkOutlineOutlined } from '@mui/icons-material';
-import Link from 'next/link';
-import { useAppContext } from "../state/AppContext";
 
 export default function Contact() {
-    const topic = useAppContext;
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -38,7 +34,7 @@ export default function Contact() {
                         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                     </div>
                 </div>
-                <p className='text-[16px] text-[#a9acae]'>Have an amazing project? Reach out, let's talk!</p>
+                <p className='text-[16px] text-[#a9acae]'>Have an amazing project? Reach out, let&apos;s talk!</p>
                 <div className='flex flex-col items-center w-full'>
                     <div className='rounded-tl-[50px] rounded-br-[50px] border-2 border-[#6df2db] w-[max-content] py-2 px-8 mt-10 mb-8'>
                         <h3 className='text-[24px] md:text-[40px] text-[#6df2db]'>Send Me A Message</h3>
