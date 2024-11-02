@@ -2,6 +2,7 @@
 import React from 'react';
 import { MailOutlined, LocationOnOutlined } from '@mui/icons-material';
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link'
 
 export default function Jumbotron() {
   return (
@@ -14,8 +15,8 @@ export default function Jumbotron() {
             <p className='cursor-pointer'><MailOutlined /></p>
         </div> */}
         <div className='flex-1'>
-            <h2 className='text-center text-[36px] md:text-[66px] font-medium text-[#9BF9F3] mb-8'>Developer</h2>
-            <div className='flex flex-col md:flex-row items-start justify-start gap-14'>
+            {/* <h2 className='text-center text-[36px] md:text-[66px] font-medium text-[#9BF9F3] mb-8'>Developer</h2> */}
+            <div className='flex flex-col md:flex-row items-start justify-start gap-14 mt-20'>
                 <div className="relative">
                     <div className="absolute top-0 left-0 w-full h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
                     <div className="leaf-shaped py-8 px-6 md:px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10">
@@ -59,8 +60,8 @@ export default function Jumbotron() {
                     <div className=''>
                         <div>
                             <p className='text-sm text-[#6AECD9]'>&lt;h1&gt;</p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium'>Hey</p>
-                            <p className='text-[44px] pl-4 leading-[50px] font-medium'>I&apos;m <span className='text-[#6AECD9]'>Roheemah</span>,</p>
+                            <p className='text-[34px] md:text-[46px] pl-4 leading-[50px] font-medium'>Hey👋</p>
+                            <p className='text-[34px] md:text-[46px] pl-4 leading-[50px] font-medium'>I&apos;m <span className='text-[#6AECD9]'>Roheemah</span>,</p>
                             <TypeAnimation
                                 sequence={[
                                     'Frontend Developer',
@@ -72,7 +73,7 @@ export default function Jumbotron() {
                                 ]}
                                 wrapper="span"
                                 speed={50}
-                                style={{ fontSize: '44px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
+                                style={{ fontSize: window.innerWidth < 768 ? '34px' : '46px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
                                 repeat={Infinity}
                             />
                             <p> <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
@@ -84,7 +85,7 @@ export default function Jumbotron() {
                         </div>
                         <div className='flex items-center justify-start gap-4 mt-6'>
                             <p className='text-[34px] text-[#6AECD9]'>Let&apos;s Talk</p>
-                            <p className='bg-[#464647] w-8 h-8 flex items-center justify-center p-4 rounded-full text-[#6AECD9] cursor-pointer'><MailOutlined /></p>
+                            <Link href="#contact" className='bg-[#464647] w-8 h-8 flex items-center justify-center p-4 rounded-full text-[#6AECD9] cursor-pointer'><MailOutlined /></Link>
                         </div>
                     </div>
                     <div className='py-10 px-8 bg-[#1A1E23] rounded-lg md:rounded-full'>

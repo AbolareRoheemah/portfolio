@@ -7,7 +7,7 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState("frontend");
 
   const frontendProjects = (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap md:gap-20 mt-10 mb-14">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 flex-wrap md:gap-20 mt-10 mb-14">
       <Link href="https://vizientcoop.com/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
@@ -348,7 +348,7 @@ export default function Projects() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-start gap-2 pt-2 px-4 md:px-20 pb-20 h-screen relative">
+    <div className="flex flex-col items-center justify-start gap-2 pt-2 px-4 md:px-20 pb-20 min-h-screen relative">
       <div className="">
         <h1 className="text-center text-[60px] md:text-[98px] font-medium text-[#6df2db]">
           &lt;/&gt;
@@ -411,7 +411,6 @@ export default function Projects() {
               }`}
             ></span>
           </button>
-          {/* <button onClick={() => setActiveTab('blockchain')} className={`px-4 py-2 rounded ${activeTab === 'blockchain' ? 'bg-[#6df2db]' : 'bg-gray-700'}`}>Blockchain</button> */}
         </div>
 
         {activeTab === "frontend" ? frontendProjects : blockchainProjects}

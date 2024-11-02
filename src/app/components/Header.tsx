@@ -33,18 +33,24 @@ export default function Header() {
             </Link>
         </div>
         <div className='md:flex hidden items-center justify-between gap-8'>
-            <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-            <Link href="https://x.com/Rhorheeymarh"><Image src="/x.svg" alt="Twitter logo" width={20} height={20} /></Link>
-                Twitter
-            </div>
-            <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-                <Link href="https://www.linkedin.com/in/abolareroheemah/"><Image src="/linkedin.svg" alt="LinkedIn logo" width={20} height={20} /></Link>
-                LinkedIn
-            </div>
-            <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-                <Link href="https://github.com/AbolareRoheemah"><GitHub className='text-[#6AECD9] w-6' /></Link>
-                GitHub
-            </div>
+            <Link href="https://x.com/Rhorheeymarh">
+                <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                <Image src="/x.svg" alt="Twitter logo" width={20} height={20} />
+                    Twitter
+                </div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/abolareroheemah/">
+                <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                    <Image src="/linkedin.svg" alt="LinkedIn logo" width={20} height={20} />
+                    LinkedIn
+                </div>
+            </Link>
+            <Link href="https://github.com/AbolareRoheemah">
+                <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                    <GitHub className='text-[#6AECD9] w-6' />
+                    GitHub
+                </div>
+            </Link>
         </div>
         <div className='md:hidden flex items-center'>
             <button onClick={toggleMenu} className='text-[#6AECD9] focus:outline-none'>
@@ -61,18 +67,24 @@ export default function Header() {
                 <Link href="/projects" className={`${pathname === "/projects" ? "text-[#6AECD9]": 'text-white py-2'}`}>Projects</Link>
                 <Link href="/blogs" className={`${pathname === "/blogs" ? "text-[#6AECD9]": 'text-white py-2'}`}>Blogs</Link>
                 <div className='flex items-center mt-4 gap-4'>
-                    <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-                    <Link href="https://x.com/Rhorheeymarh"><Image src="/x.svg" alt="Twitter logo" width={20} height={20} /></Link>
-                        Twitter
-                    </div>
-                    <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-                        <Link href="https://www.linkedin.com/in/abolareroheemah/"><Image src="/linkedin.svg" alt="LinkedIn logo" width={20} height={20} /></Link>
-                        LinkedIn
-                    </div>
-                    <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
-                        <Link href="https://github.com/AbolareRoheemah"><GitHub className='text-[#6AECD9] w-6' /></Link>
-                        GitHub
-                    </div>
+                    <Link href="https://x.com/Rhorheeymarh">
+                        <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                        <Image src="/x.svg" alt="Twitter logo" width={20} height={20} />
+                            Twitter
+                        </div>
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/abolareroheemah/">
+                        <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                            <Image src="/linkedin.svg" alt="LinkedIn logo" width={20} height={20} />
+                            LinkedIn
+                        </div>
+                    </Link>
+                    <Link href="https://github.com/AbolareRoheemah">
+                        <div className='flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110'>
+                            <GitHub className='text-[#6AECD9] w-6' />
+                            GitHub
+                        </div>
+                    </Link>
                 </div>
             </div>
         )}

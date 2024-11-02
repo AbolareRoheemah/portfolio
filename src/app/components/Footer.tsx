@@ -5,7 +5,8 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className='flex flex-col items-center justify-between px-4 py-6 border-t border-t-[#a9acae] md:flex-row md:px-20'>
+    <footer className='flex flex-col items-center justify-between px-4 py-6 border-t border-t-[#a9acae] md:flex-row md:px-20 bg-[#0D1117]'>
+      
         <div className='text-center md:text-left'>
             <p className='text-[16px] text-[#a9acae]'>&copy; 2024 AbolareRoheemah. All Rights Reserved</p>
         </div>
@@ -15,7 +16,7 @@ export default function Footer() {
             <Link href="https://github.com/AbolareRoheemah"><GitHub className='text-[#6AECD9] w-8' /></Link>
         </div>
         <div className='text-center md:text-right mt-4 md:mt-0'>
-            <p className='text-[16px] text-[#a9acae]'>Developed by <span className='underline text-[#2f7267]'>AbolareRoheemah</span></p>
+            <p className='text-[16px] text-[#a9acae]'>Developed by <span className='text-[#2f7267]'>AbolareRoheemah</span></p>
         </div>
     </footer>
   )
