@@ -73,7 +73,7 @@ export default function Jumbotron() {
                             </div>
                             <div className='mt-8'>
                                 <p className='text-sm text-[#6AECD9]'>&lt;p&gt;</p>
-                                <p className='pl-4 text-md font-bold text-[#9B9EA1]'>I build user-friendly and visually appealing web applications. I also design, implement and maintain blockchain based applications. I hate mediocrity.</p>
+                                <p className='pl-4 text-md font-bold text-[#9B9EA1]'>I build user-friendly and visually appealing web applications. I also design, implement and maintain blockchain based applications. I love meeting people and having meaninful conversations :)</p>
                                 <p className='text-sm text-[#6AECD9]'>&lt;/p&gt;</p>
                             </div>
                             <div className='flex items-center justify-start gap-4 mt-6'>

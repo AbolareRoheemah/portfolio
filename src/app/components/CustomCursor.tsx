@@ -72,7 +72,7 @@ const CustomCursor = () => {
         top: 0;
         left: 0;
         pointer-events: none;
-        z-index: 50;
+        z-index: 100; /* Increased z-index to ensure it is on top */
         opacity: 0;
         will-change: transform;
       }
@@ -106,7 +106,7 @@ const CustomCursor = () => {
 
   return (
     <div ref={cursorRef} className="spring-cursor">
-      <div className="spring-cursor-inner z-100" />
+      <div className="spring-cursor-inner" />
     </div>
   );
 };
