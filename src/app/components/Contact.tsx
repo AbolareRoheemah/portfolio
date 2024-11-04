@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -61,7 +61,7 @@ export default function Contact() {
         } catch (error) {
             setStatus({
                 type: 'error',
-                message: 'Oops! Something went wrong. Please try again later.'
+                message: `Oops! ${error}. Please try again later.`
             });
         } finally {
             setIsSubmitting(false);

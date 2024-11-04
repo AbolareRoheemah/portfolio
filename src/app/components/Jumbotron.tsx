@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link'
 
 export default function Jumbotron() {
+    const isClient = typeof window !== 'undefined';
   return (
     <div className='min-h-screen flex flex-col md:flex-row items-top justify-start gap-16 pt-2 px-4 md:px-20'>
         {/* <div className='menu border border-[#898C90] w-20 h-auto max-h-[40vh] flex flex-col items-center justify-between gap-2 py-6 px-6 rounded-full'>
@@ -73,7 +74,7 @@ export default function Jumbotron() {
                                 ]}
                                 wrapper="span"
                                 speed={50}
-                                style={{ fontSize: window.innerWidth < 768 ? '34px' : '46px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
+                                style={{ fontSize: isClient && window.innerWidth < 768 ? '34px' : '46px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
                                 repeat={Infinity}
                             />
                             <p> <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
