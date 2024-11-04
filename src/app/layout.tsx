@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import { AppProvider } from "./state/AppContext";
 import Footer from "./components/Footer";
+import CustomCursor from "@/app/components/CustomCursor"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,10 +33,11 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[100vw] overflow-x-hidden min-h-screen flex flex-col`}
         >
+          <CustomCursor />
           <div>
             <Header />
           </div>
-          <div className="flex-grow">
+          <div className="flex-grow pt-[12vh]">
             {children}
           </div>
           <div>

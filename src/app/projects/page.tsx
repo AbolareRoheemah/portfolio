@@ -1,14 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { WorkOutlineOutlined } from "@mui/icons-material";
 import Link from "next/link";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState("frontend");
+  useEffect(() => {
+    const aosConfig = {
+      duration: 1000,
+      once: false,
+      offset: 100,
+      useClassNames: true,
+      easing: 'ease-out-cubic' as const
+    }
+    
+    AOS.init(aosConfig)
+  }, [])
 
   const frontendProjects = (
     <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 flex-wrap md:gap-20 mt-10 mb-14">
-      <Link href="https://vizientcoop.com/">
+      <Link data-aos="flip-left" href="https://vizientcoop.com/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
@@ -42,7 +55,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://reablock.com/">
+      <Link data-aos="flip-left" href="https://reablock.com/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
@@ -74,7 +87,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://web3-learner.vercel.app/">
+      <Link data-aos="flip-left" href="https://web3-learner.vercel.app/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
@@ -109,7 +122,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://smart-word-web.vercel.app/">
+      <Link data-aos="flip-left" href="https://smart-word-web.vercel.app/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
@@ -141,7 +154,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://e-volt-drl8.vercel.app/">
+      <Link data-aos="flip-left" href="https://e-volt-drl8.vercel.app/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
@@ -173,7 +186,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://vizientcoop.com/">
+      <Link data-aos="flip-left" href="https://vizientcoop.com/">
         <div className="relative group">
           <div
             className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform 
@@ -212,7 +225,7 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link href="https://goshen.vercel.app/">
+      <Link data-aos="flip-left" href="https://goshen.vercel.app/">
         <div className="relative group">
           <div
             className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-
@@ -349,13 +362,13 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col items-center justify-start gap-2 pt-2 px-4 md:px-20 pb-20 min-h-screen relative">
-      <div className="">
+      <div className="" data-aos="flip-up">
         <h1 className="text-center text-[60px] md:text-[98px] font-medium text-[#6df2db]">
           &lt;/&gt;
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-2 text-center relative z-10">
-        <div className="relative inline-block">
+        <div className="relative inline-block" data-aos="flip-up">
           <p className="text-[34px] md:text-[46px] font-medium text-[#6df2db]">
             Projects
           </p>
@@ -364,11 +377,11 @@ export default function Projects() {
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
           </div>
         </div>
-        <p className="text-[20px] text-[#a9acae]">
+        <p className="text-[20px] text-[#a9acae]" data-aos="flip-up">
           Here are some of the projects I have worked on over the years.
         </p>
 
-        <div className="flex space-x-4 mt-10">
+        <div className="flex space-x-4 mt-10" data-aos="flip-up">
           <button
             onClick={() => setActiveTab("frontend")}
             className="relative group pb-1"

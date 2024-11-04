@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <div className={`px-4 md:px-20 flex items-center justify-between py-8 border-b-[2px] border-[#31363D] ${isMenuOpen ? 'mb-[20vh]':''}`}>
+    <div className={`fixed top-0 left-0 z-50 w-full bg-[#010101] px-4 md:px-20 flex items-center justify-between py-8 border-b-[2px] border-[#31363D] ${isMenuOpen ? 'mb-[20vh]':''}`}>
         <Link href="/">
             <span className='text-[20px] text-[#6AECD9] font-bold'>&lt;A.R.A /&gt;</span>
         </Link>

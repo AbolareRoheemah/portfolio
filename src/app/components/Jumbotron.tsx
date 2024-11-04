@@ -3,13 +3,11 @@ import React from 'react';
 import { MailOutlined, LocationOnOutlined } from '@mui/icons-material';
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link'
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Jumbotron() {
-    const isMobile = useMediaQuery('(max-width:768px)', { noSsr: true });
 
     return (
-        <div className='min-h-screen flex flex-col md:flex-row items-top justify-start gap-16 pt-2 px-4 md:px-20'>
+        <div className='min-h-screen flex flex-col md:flex-row items-top justify-start gap-16 px-4 md:px-20'>
             <div className='flex-1'>
                 <div className='flex flex-col md:flex-row items-start justify-start gap-14 mt-20'>
                     <div className="relative">

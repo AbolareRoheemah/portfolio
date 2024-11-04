@@ -68,4 +68,29 @@ body {
     width: 100vw;
     height: auto;
   }
+  .animate-typing {
+      animation: typing 3s infinite;
+  }
+
+  .animate-cursor {
+      animation: cursor 1s infinite;
+  }
+
+  .animate-wave {
+      animation: wave 2s ease-in-out infinite;
+  }
+  @keyframes typing {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
 }
