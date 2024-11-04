@@ -68,7 +68,7 @@ export default function Jumbotron() {
                                     ]}
                                     wrapper="span"
                                     speed={50}
-                                    style={{ fontSize: isMobile ? '34px' : '46px', display: 'inline-block', lineHeight: '50px', fontWeight: '500', marginLeft: '1rem' }}
+                                    className='text-[34px] md:text-[46px] leading-[50px] font-medium ml-[1rem]'
                                     repeat={Infinity}
                                 />
                                 <p> <span className='text-sm text-[#6AECD9]'>&lt;/h1&gt;</span></p>
