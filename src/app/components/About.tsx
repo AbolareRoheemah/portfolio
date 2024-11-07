@@ -19,16 +19,16 @@ export default function About() {
                 <div className='bg-[#0D1117] py-6 px-4 md:px-8 mt-10 rounded-[40px]'>
                     <p data-aos="fade-up" className='text-sm text-[#6AECD9] mb-4'>&lt;p&gt;</p>
                     <h5 data-aos="fade-up" data-aos-delay="10" className='text-[#6bf6fb] text-xl font-bold mb-2 ml-4'>Hello!</h5>
-                    <p data-aos="fade-up" data-aos-delay="20" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>My name is Roheemah and I&apos;m a skilled frontend developer. I have about 3 years experience working with languages such as <span className='text-[#6bf6fb]'>HTML, CSS, JS, TS</span> and JS frameworks like <span className='text-[#6bf6fb]'>React, Next, Vue and Nuxt</span></p>
+                    <p data-aos="fade-up" data-aos-delay="20" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>Hello, I&apos;m Roheemah, a frontend developer with over three years of experience in building dynamic and engaging web applications. My expertise spans <span className='text-[#6bf6fb]'>HTML, CSS, Javascript, Typescript</span>, and popular JavaScript frameworks like <span className='text-[#6bf6fb]'>React, Next, Vue and Nuxt</span></p>
                     <p data-aos="fade-up" data-aos-delay="30" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
-                        I&apos;m also a blockchain developer. I utilize the <span>solidity</span> language in building secure <span>smart contracts</span>.
+                    In addition to frontend development, I am also a blockchain developer skilled in <span className='text-[#6bf6fb]'>Solidity</span>, creating secure and efficient <span className='text-[#6bf6fb]'>smart contracts</span> for various blockchain applications.
                     </p>
                     <p data-aos="fade-up" data-aos-delay="40" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
-                        I&apos;m a technical/content writer too. Technical writing helps me understand complex topics but generally, writing, for me, is the best way to express myself.
+                    As a technical and content writer, I enjoy breaking down complex concepts and communicating them effectively, helping myself and my readers gain deeper insights into technology.
                     </p>
-                    <p data-aos="fade-up" data-aos-delay="50" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>If the opportunity arises, I am also a public speaker. I&apos;ve had the opportunity to speak at a couple of events, including a tech event organized by the Google Devlopers Students Club (GDSC) in my university</p>
+                    <p data-aos="fade-up" data-aos-delay="50" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>I am also passionate about public speaking and have had the privilege of speaking at several events, including a tech event hosted by the Google Developer Students Club (GDSC) at my university.</p>
                     <p data-aos="fade-up" data-aos-delay="60" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
-                        I hate mediocrity, I love travelling, reading self-help books and of course meeting and connecting with people.
+                    Outside of work, I strive for excellence in all I do, with a strong aversion to mediocrity. I love traveling, reading self-help books, and connecting with people from diverse backgrounds.
                     </p>
                     <p data-aos="fade-up" data-aos-delay="70" className='text-sm text-[#6AECD9] mt-4'>&lt;/p&gt;</p>
                 </div>

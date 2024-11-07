@@ -30,7 +30,7 @@ export default function Jumbotron() {
                                 </div>
                                 <div className='flex items-center justify-start gap-4 mb-4'>
                                     <img src="/link.svg" alt="" width={24} height={24} />
-                                    <span>Lagos, Nigeria</span>
+                                    <span>www.github.com/AbolareRoheemah</span>
                                 </div>
                             </div>
                             <div className='flex items-center justify-between flex-wrap gap-2 mt-2'>
@@ -41,12 +41,12 @@ export default function Jumbotron() {
                                 <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>VUE</p>
                                 <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>NUXT</p>
                                 <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>SOLIDITY</p>
-                                <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>RUST</p>
+                                {/* <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>RUST</p> */}
                             </div>
-                            <div className='flex items-center justify-between gap-4 bg-white py-4 px-8 text-[#000] rounded-full font-medium mt-10 cursor-pointer'>
+                            <a href="https://docs.google.com/document/d/1iLtYWAaMytZ2K9NEQ3f8LVEUUOVBfcGFhkmYYE1tPdI/edit?usp=sharing" download="Abolare_Roheemah_CV.pdf" target="_blank" rel="noopener noreferrer" className='flex items-center justify-between gap-4 bg-white py-4 px-8 text-[#000] rounded-full font-medium mt-10 cursor-pointer'>
                                 <p>Download CV</p>
                                 <img src="/download.svg" alt="" width={24} height={24} />
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className='flex flex-col md:flex-row md:items-start md:justify-start gap-10 pt-10'>

@@ -30,6 +30,7 @@ const Skills = () => {
             </div>
             <div className='flex items-center justify-center gap-4 flex-wrap mb-20'>
                 {[
+                    { name: 'Solidity', color: '#363636', icon: './solidity.svg' },
                     { name: 'HTML', color: '#e54f2d', icon: './html5.svg' },
                     { name: 'CSS', color: '#1e72b8', icon: './css3.svg' },
                     { name: 'JS', color: '#e8a02e', icon: './nodedotjs.svg' },
@@ -38,7 +39,6 @@ const Skills = () => {
                     { name: 'Vue', color: '#4FC08D', icon: './vuedotjs.svg' },
                     { name: 'Nuxt', color: '#00DC82', icon: './nuxtdotjs.svg' },
                     { name: 'Tailwind', color: '#06B6D4', icon: './tailwindcss.svg' },
-                    { name: 'Solidity', color: '#363636', icon: './solidity.svg' },
                 ].map((skill, index) => (
                     <div 
                         key={skill.name}
