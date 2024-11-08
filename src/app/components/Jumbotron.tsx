@@ -43,9 +43,10 @@ export default function Jumbotron() {
                                 <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>SOLIDITY</p>
                                 {/* <p className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>RUST</p> */}
                             </div>
-                            <a href="https://docs.google.com/document/d/1iLtYWAaMytZ2K9NEQ3f8LVEUUOVBfcGFhkmYYE1tPdI/edit?usp=sharing" download="Abolare_Roheemah_CV.pdf" target="_blank" rel="noopener noreferrer" className='flex items-center justify-between gap-4 bg-white py-4 px-8 text-[#000] rounded-full font-medium mt-10 cursor-pointer'>
-                                <p>Download CV</p>
-                                <img src="/download.svg" alt="" width={24} height={24} />
+                            <a href="https://docs.google.com/document/d/1iLtYWAaMytZ2K9NEQ3f8LVEUUOVBfcGFhkmYYE1tPdI/edit?usp=sharing" download="Abolare_Roheemah_CV.pdf" target="_blank" rel="noopener noreferrer" className='flex items-center justify-center gap-4 bg-white py-4 px-8 text-[#000] rounded-full font-medium mt-10 cursor-pointer'>
+                                <p>Click to view CV</p>
+                                {/* <img src="/download.svg" alt="" width={24} height={24} /> */}
+                                {/* <img src="/view.svg" alt="" width={24} height={24} /> */}
                             </a>
                         </div>
                     </div>
