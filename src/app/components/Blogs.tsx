@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 export default function Blogs() {
     const router = useRouter();
 
@@ -34,10 +35,10 @@ export default function Blogs() {
                 <div className='text-left'>
                     <h3 className='text-[34px] text-[#6df2db] md:py-6' data-aos="fade-up">Understanding ERC20 tokens</h3>
                     <p className='text-sm text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">ERC-20 (Ethereum Request for Comments-20) is the name used in the Ethereum community to refer to a standard (set of rules and functions) that guides the creation of fungible tokens on the Ethereum blockchain. Fungible tokens are tokens that are identical and can be exchanged on a one-for-one basis. In this article, I will go through the different functions contained in an ERc20 token standard and how they are used...</p>
-                    <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
+                    <Link href="https://rhorheeymarh.hashnode.dev/unpacking-erc-20-tokens-understanding-their-functions-and-their-uses" className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p>
                         <img src="/readmore.svg" alt="" className='w-6 h-4' />
-                    </div>
+                    </Link>
                 </div>
             </div>
             <button className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14 transition-transform transform hover:scale-105' onClick={handleRoute} data-aos="fade-up" data-aos-delay="40">

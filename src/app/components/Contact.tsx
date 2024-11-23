@@ -69,7 +69,7 @@ export default function Contact() {
     };
 
     return (
-        <div className='flex flex-col items-center justify-start gap-2 pt-2 px-8 md:px-20 pb-20 min-h-screen relative bg-[#0D1117]'>
+        <div id="contact" className='flex flex-col items-center justify-start gap-2 pt-2 px-8 md:px-20 pb-20 min-h-screen relative bg-[#0D1117]'>
             <div className="flex flex-col items-center justify-center my-12 relative z-10">
                 <div className="w-6 h-10 border-2 border-[#6df2db] rounded-full shadow-lg flex items-start justify-center cursor-pointer">
                     <div className='w-[1vw] h-[1vw] md:w-[0.5vw] md:h-[0.5vw] mt-2 rounded-full bg-[#6df2db]'></div>
